@@ -1,0 +1,4 @@
+{
+  "mongoURI": "mongodb+srv://sxhafiz:342njeNRc4OO2zeI@mvcluster1.x6xf2.mongodb.net/?retryWrites=true&w=majority&appName=mvCluster1",
+  "jwtSecret": "mYs3cr3tK3y_f0r_JWT_t0k3ns_2023"
+}

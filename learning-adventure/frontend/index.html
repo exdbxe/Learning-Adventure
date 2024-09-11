@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Fun Learning for Kids!</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+    </head>
+    <body>
+        <header>
+            <h1 class="animate__animated animate__bounce">
+                🌈 Fun Learning Adventure 🚀
+            </h1>
+        </header>
+        <nav>
+            <button id="readingBtn">Reading</button>
+            <button id="mathBtn">Math</button>
+            <button id="scienceBtn">Science</button>
+            <button id="profileBtn">Profile</button>
+        </nav>
+        <div id="difficultySelector">
+            <button class="difficulty" data-level="easy">Easy</button>
+            <button class="difficulty" data-level="medium">Medium</button>
+            <button class="difficulty" data-level="hard">Hard</button>
+        </div>
+        <main id="content">
+            <div id="welcome">
+                <h2 class="animate__animated animate__rubberBand">
+                    Welcome, young explorer! 👋
+                </h2>
+                <p>
+                    Choose a subject and difficulty to start your learning
+                    adventure!
+                </p>
+            </div>
+        </main>
+        <div id="scoreBoard">
+            <p>Score: <span id="score">0</span></p>
+            <p>Streak: <span id="streak">0</span></p>
+            <p>Level: <span id="level">1</span></p>
+        </div>
+        <div id="progressBar">
+            <div id="progress"></div>
+        </div>
+        <div id="rewardCase"></div>
+        <footer>
+            <p>© 2023 Fun Learning Adventure</p>
+        </footer>
+        <script type="module" src="script.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,192 @@
+body {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ff9933;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #66cc99;
+    padding: 10px;
+}
+
+button {
+    font-family: inherit;
+    font-size: 18px;
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff6666;
+    color: white;
+    cursor: pointer;
+    transition:
+        background-color 0.3s,
+        transform 0.1s;
+}
+
+button:hover {
+    background-color: #ff4d4d;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#scoreBoard {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+#progressBar {
+    width: 80%;
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 10px;
+    margin: 20px auto;
+}
+
+#progress {
+    width: 0%;
+    height: 100%;
+    background-color: #4caf50;
+    border-radius: 10px;
+    transition: width 0.5s;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #66cc99;
+    color: white;
+}
+
+.animate__animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.float {
+    animation: float 2s ease-in-out infinite;
+}
+
+#difficultySelector {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.difficulty {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.difficulty[data-level="easy"] {
+    background-color: #90ee90;
+}
+.difficulty[data-level="medium"] {
+    background-color: #ffd700;
+}
+.difficulty[data-level="hard"] {
+    background-color: #ff6347;
+}
+
+#rewardCase {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.reward {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#profileBtn {
+    background-color: #4caf50;
+}
+
+.activity-transition {
+    transition: opacity 0.3s ease-in-out;
+}
+
+.activity-transition.fade-out {
+    opacity: 0;
+}
+
+.achievement-notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4caf50;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+#drag-container,
+#drop-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.draggable {
+    padding: 10px;
+    margin: 5px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: move;
+}
+
+.draggable.dragging {
+    opacity: 0.5;
+}
